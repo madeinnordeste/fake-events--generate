@@ -1,6 +1,13 @@
 # fake-events--generate
 
+## install dependencies
 
-example
+    docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/var/www/html" -w /var/www/html laravelsail/php83-composer:latest composer install --ignore-platform-reqs
+
+# run
+
+    docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/var/www/html" -w /var/www/html laravelsail/php83-composer:latest php generate.php
+
+## Result example
 
     https://gist.github.com/madeinnordeste/331c4b3ae26a630c9c3bc6863013cb2c
